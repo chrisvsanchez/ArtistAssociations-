@@ -1,0 +1,7 @@
+<h1><%= @artist.name %></h1>
+<% @artist.songs.each do |song|%>
+<%=song.title%>
+<%end%>
+<%=button_to 'Delete', "/artists/#{@artist.id}", method: :delete %>
+
+
